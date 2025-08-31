@@ -1,0 +1,8 @@
+{
+  "extends": "@tsconfig/node24/tsconfig",
+  "include": ["*.ts", "packages/**/*"],
+  // "references": [{ "path": "./packages/" }],
+  "compilerOptions": {
+    "noEmit": true
+  }
+}
