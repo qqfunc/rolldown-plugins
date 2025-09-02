@@ -4,6 +4,7 @@
   "license": "Unlicense",
   "scripts": {
     "check": "lefthook run check",
+    "fix": "lefthook run fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
