@@ -19,3 +19,10 @@ check:
       run: npx eslint --cache --concurrency auto
     - name: Knip
       run: npx knip --strict
+
+fix:
+  jobs:
+    - name: Knip
+      run: npx knip --strict --fix
+    - name: ESLint
+      run: npx eslint --fix --cache --concurrency auto
