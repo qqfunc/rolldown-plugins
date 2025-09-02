@@ -1,3 +1,3 @@
 # Rolldown Plugins
 
-[WIP] Unofficial Rolldown plugins.
+(WIP) Unofficial Rolldown plugins.
