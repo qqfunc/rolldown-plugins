@@ -6,6 +6,12 @@ pre-commit:
     - name: Knip
       run: npx knip --strict
 
+commit-msg:
+  parallel: true
+  jobs:
+    - name: commitlint
+      run: npx commitlint --edit $1
+
 check:
   parallel: true
   jobs:
