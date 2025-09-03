@@ -4,7 +4,11 @@
   "license": "Unlicense",
   "scripts": {
     "check": "lefthook run check",
+    "check:eslint": "lefthook run check --jobs ESLint",
+    "check:knip": "lefthook run check --jobs Knip",
     "fix": "lefthook run fix",
+    "fix:eslint": "lefthook run fix --jobs ESLint",
+    "fix:knip": "lefthook run fix --jobs Knip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
