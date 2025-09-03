@@ -18,9 +18,13 @@
 - String literals: single quotes
 - No semicolons
 
-## Tools
+## Commands
 
 Basically, you should use npm scripts instead of executing the tools individually.
+
+### Build
+
+- `npm run build`: Build all projects with TypeScript
 
 ### Code Check / Fix
 

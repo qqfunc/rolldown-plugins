@@ -12,6 +12,11 @@ commit-msg:
     - name: commitlint
       run: npx commitlint --edit $1
 
+build:
+  jobs:
+    - name: TypeScript
+      run: npx tsc -b
+
 check:
   parallel: true
   jobs:
