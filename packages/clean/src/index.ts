@@ -1,11 +1,11 @@
 import fs from 'node:fs'
 import type { Plugin } from 'rolldown'
 
-export default function (dir: string | undefined): Plugin {
+export default function (path?: string): Plugin {
   return {
-    name: 'delete',
+    name: 'clean',
     generateBundle(options) {
-      const path = dir ?? options.dir
+      path = path ?? options.dir ?? options.file
       if (typeof path === 'string') {
         fs.rmSync(path, { force: true, recursive: true })
       }

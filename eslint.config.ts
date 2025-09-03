@@ -1,4 +1,6 @@
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'eslint/config'
+import { includeIgnoreFile } from '@eslint/compat'
 import js from '@eslint/js'
 import stylistic from '@stylistic/eslint-plugin'
 import tseslint from 'typescript-eslint'
@@ -6,6 +8,7 @@ import json from '@eslint/json'
 import markdown from '@eslint/markdown'
 
 export default defineConfig([
+  includeIgnoreFile(fileURLToPath(new URL('.gitignore', import.meta.url))),
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     plugins: { js, stylistic },

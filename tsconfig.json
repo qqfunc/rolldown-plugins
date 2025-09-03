@@ -1,8 +1,8 @@
 {
-  "extends": "@tsconfig/node24/tsconfig",
-  "include": ["*.ts", "packages/**/*"],
-  // "references": [{ "path": "./packages/" }],
-  "compilerOptions": {
-    "noEmit": true
-  }
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "config/tsconfig",
+  "include": [],
+  "references": [
+    { "path": "packages/clean" }
+  ]
 }

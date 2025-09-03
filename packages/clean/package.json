@@ -1,0 +1,13 @@
+{
+  "name": "@power.js/rolldown-plugin-clean",
+  "description": "A plugin to clean files and directories before the build.",
+  "license": "Unlicense",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  },
+  "type": "module"
+}
