@@ -21,13 +21,13 @@ export default defineConfig([
   },
   {
     files: ['**/*.json'],
-    ignores: ['**/package-lock.json', '**/tsconfig.json', '.vscode/*.json'],
+    ignores: ['**/package-lock.json', '**/tsconfig.json', '.vscode/*.json', '.renovaterc.json'],
     plugins: { json },
     language: 'json/json',
     extends: [json.configs.recommended],
   },
   {
-    files: ['**/*.jsonc', '**/tsconfig.json', '.vscode/*.json'],
+    files: ['**/*.jsonc', '**/tsconfig.json', '.vscode/*.json', '.renovaterc.json'],
     plugins: { json },
     language: 'json/jsonc',
     extends: [json.configs.recommended],
