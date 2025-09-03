@@ -25,11 +25,11 @@ Basically, you should use npm scripts instead of executing the tools individuall
 ### Code Check / Fix
 
 - `npm run check`: Run all checking tools
-- `npm run check:lint`: Lint
-- `npm run check:deps`: Check dependencies
+- `npm run check:eslint`: Lint with ESLint
+- `npm run check:knip`: Check dependencies with Knip
 - `npm run fix`: Run all fixing tools
-- `npm run fix:fmt`: Format
-- `npm run fix:deps`: Fix dependencies
+- `npm run fix:eslint`: Format with ESLint
+- `npm run fix:knip`: Fix dependencies with Knip
 
 ## Commit Messages
 
