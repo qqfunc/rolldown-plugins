@@ -1,10 +1,10 @@
 pre-commit:
   parallel: true
   jobs:
-    - name: Knip
-      run: npx knip --strict --cache
     - name: ESLint
       run: npx eslint --cache --concurrency auto
+    - name: Knip
+      run: npx knip --strict --cache
 
 commit-msg:
   parallel: true
@@ -15,10 +15,10 @@ commit-msg:
 check:
   parallel: true
   jobs:
-    - name: Knip
-      run: npx knip --strict --cache
     - name: ESLint
       run: npx eslint --cache --concurrency auto
+    - name: Knip
+      run: npx knip --strict --cache
 
 fix:
   jobs:
